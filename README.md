@@ -1,106 +1,98 @@
-Contents of This Repository
-1. Active Directory Fundamentals Lab
+# Active Directory Fundamentals & Security Lab
 
-This lab covers the foundational concepts required to understand and work with Active Directory in an enterprise environment.
+This repository contains a **hands-on Active Directory (AD) lab** focused on **enterprise identity management**, **domain administration**, and **security misconfiguration awareness** from a **Blue Team / SOC perspective**.
 
-Topics included:
+All activities were performed in a **controlled lab environment** for educational and defensive purposes.
 
-Windows Server 2022 installation using VirtualBox
+---
 
-Active Directory Domain Services (AD DS) setup
+## 📁 Contents of This Repository
 
-Domain Controller promotion
+### 🔹 Active Directory Fundamentals Lab
 
-Organizational Units (OUs) creation
+This lab covers the **core concepts required to understand and manage Active Directory** in an enterprise environment.
 
-User account creation and management
+**Topics Included:**
+- Windows Server 2022 installation using VirtualBox
+- Active Directory Domain Services (AD DS) setup
+- Domain Controller promotion
+- Organizational Units (OU) creation and structure
+- User account creation and management
+- Domain joining of client systems
+- Basic DNS configuration for domain communication
 
-Domain joining of client systems
+**Files:**
+- `AD task.pdf`
+- `Learn Active Directory.docx`
+- `ad_organizational_structure.png`
 
-Basic DNS configuration for domain communication
+---
 
-Files:
+### 🔹 Active Directory Test Cases
 
-AD task.pdf
+This section documents **test cases used to validate AD functionality and configuration**.
 
-Learn Active Directory.docx
+**Focus Areas:**
+- User authentication validation
+- OU structure verification
+- Policy and configuration consistency
+- Domain join verification
 
-ad_organizational_structure.png
+**File:**
+- `AD task Test cases.pdf`
 
-2. Active Directory Test Cases
+---
 
-This section documents test cases used to validate the Active Directory setup and behavior in the lab.
+### 🔹 Security Misconfiguration & Attacker Walkthrough  
+*(Defensive Perspective)*
 
-Focus areas:
+This lab demonstrates how **common Active Directory misconfigurations** can be abused by attackers and explains **why these weaknesses are dangerous** from a defensive standpoint.
 
-User authentication validation
+The walkthrough is designed to help **SOC analysts and Blue Team professionals** understand attacker behavior in order to improve **detection, monitoring, and mitigation strategies**.
 
-OU structure verification
+**Key Concepts Demonstrated:**
+- Weak password policies
+- Lack of Group Policy hardening
+- AS-REP roasting risks
+- SMB and shared folder permission abuse
+- Lateral movement concepts
+- Importance of centralized logging and monitoring
 
-Policy and configuration consistency
+**File:**
+- `How Attacker Walkthrough - Exploiting The Lab.pdf`
 
-Domain join verification
+⚠️ *This walkthrough is strictly educational and conducted only in a lab environment. No production systems were involved.*
 
-File:
+---
 
-AD task Test cases.pdf
+## 🛠️ Tools & Technologies Used
 
-3. Security Misconfiguration & Attacker Walkthrough (Defensive Perspective)
+- Windows Server 2022  
+- Active Directory Domain Services (AD DS)  
+- VirtualBox  
+- Windows DNS  
+- Controlled attacker tools (lab only)
 
-This lab demonstrates how common Active Directory misconfigurations can be abused by attackers and explains why these issues are dangerous from a defensive standpoint.
+---
 
-The walkthrough is designed to help Blue Team and SOC analysts understand attacker behavior so that proper detection and mitigation strategies can be applied.
+## 🎯 Learning Objectives
 
-Key concepts demonstrated:
+- Understand enterprise Active Directory structure and management
+- Identify common AD security misconfigurations
+- Learn how attackers exploit identity-based weaknesses
+- Build defensive awareness for SOC and Blue Team roles
+- Strengthen practical cybersecurity knowledge beyond theory
 
-Weak password policies
+---
 
-Lack of Group Policy hardening
+## ⚠️ Disclaimer
 
-AS-REP roasting risks
+All demonstrations in this repository were conducted in **authorized lab environments** for **learning and defensive awareness purposes only**.  
+Any misuse of these techniques outside permitted environments is **illegal and unethical**.
 
-SMB and share permission abuse
+---
 
-Lateral movement concepts
+## 👤 Author
 
-Importance of logging and monitoring
-
-File:
-
-How Attacker Walkthrough - Exploiting The Lab.pdf
-
-⚠️ This walkthrough is strictly educational and conducted in a lab environment. No production systems were involved.
-
-Tools & Technologies Used
-
-Windows Server 2022
-
-Active Directory Domain Services (AD DS)
-
-VirtualBox
-
-Windows DNS
-
-Controlled attacker tools (lab only)
-
-Learning Objectives
-
-Understand enterprise Active Directory structure and management
-
-Identify common AD security misconfigurations
-
-Learn how attackers exploit identity-based weaknesses
-
-Build defensive awareness for SOC and Blue Team roles
-
-Strengthen practical cybersecurity knowledge beyond theory
-
-Disclaimer
-
-All demonstrations in this repository were conducted in authorized lab environments for learning and defensive awareness purposes only.
-Any misuse of these techniques outside permitted environments is illegal and unethical.
-
-Author
-
-Devarajan P M
+**Devarajan P M**  
 Cybersecurity Practitioner | SOC & Active Directory Labs
